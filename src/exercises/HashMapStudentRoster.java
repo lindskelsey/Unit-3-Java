@@ -6,5 +6,5 @@
 
 package exercises;
 
-public class HashMap {
+public class HashMapStudentRoster {
 }
