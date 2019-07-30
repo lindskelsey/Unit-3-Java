@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 //Make the counts case-insensitive
 //Exclude non-alphabetic characters
+//User input
 
 
 public class CountingCharactersBonusMissions {
