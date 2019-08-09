@@ -30,6 +30,23 @@ public class Course {
             studentList.add(student);
     }
 
+    //From Prep 3.6: Add custom equals() and toString() methods to the Course class
+
+    public String toString() {
+
+        ArrayList<String> nameList = new ArrayList<>();
+
+        for(Student student: studentList) {
+            nameList.add(student.getName());
+        }
+        return name + " (Teacher: " + teacher + ", Students" + nameList + ")";
+    }
+
+    public boolean equals(Object o) {
+        Course theCourse = (Course) o;
+        return theCourse.getCourseId() == getCourseId();
+    }
+
     //Getters and Setters
 
     public String getName() {
